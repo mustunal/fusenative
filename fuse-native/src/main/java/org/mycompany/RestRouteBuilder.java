@@ -14,5 +14,20 @@ public class RestRouteBuilder extends RouteBuilder {
 		  .transform().constant("Hello World");
 		
 	}
+	
+	private void alternateConfig() {
+		/*
+		 restConfiguration().component("spark-rest").port(9091);
+
+			rest("/say")
+			    .get("/hello").to("direct:hello")
+			    .get("/bye").to("direct:bye");
+			
+			from("direct:hello")
+			    .transform().constant("Hello World");
+			from("direct:bye")
+			    .transform().constant("Bye World");
+		 */
+	}
 
 }
